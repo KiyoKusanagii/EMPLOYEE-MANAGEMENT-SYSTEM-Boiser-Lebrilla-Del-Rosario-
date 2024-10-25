@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $position = $_POST['position'];
 
     $query = "INSERT INTO employees (name, email, position) VALUES ('$name', '$email', '$position')";
-    $conn->query($query);
+    $conn = new mysqli ("sql113.infinityfree.com', 'if0_37588923', 'emplyeesytm24', if0_37588923_employee_management");
     header("Location: employees.php");
 }
 ?>
