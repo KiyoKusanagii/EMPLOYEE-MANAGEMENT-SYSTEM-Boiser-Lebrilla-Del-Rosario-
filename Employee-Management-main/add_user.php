@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
     $query = "INSERT INTO users (username, password) VALUES ('$username', '$password')";
-    $conn->query($query);
+    $conn = new mysqli ("sql113.infinityfree.com', 'if0_37588923', 'emplyeesytm24', if0_37588923_employee_management");
     header("Location: users.php");
 }
 ?>
