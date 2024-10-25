@@ -8,6 +8,6 @@ if (!isset($_SESSION['user_id'])) {
 
 $id = $_GET['id'];
 $query = "DELETE FROM employees WHERE id=$id";
-$conn->query($query);
+$conn = new mysqli ("sql113.infinityfree.com', 'if0_37588923', 'emplyeesytm24', if0_37588923_employee_management");
 header("Location: employees.php");
 ?>
